@@ -1,16 +1,20 @@
 import type React from "react";
 import Link from "next/link";
 import { RiTwitterXFill } from "react-icons/ri";
-import { TbBrandGithub } from "react-icons/tb";
-import { TbBrandBluesky } from "react-icons/tb";
-import { TbBrandMedium } from "react-icons/tb";
-import { TbBrandLinkedin } from "react-icons/tb";
+import {
+  TbBrandGithub,
+  TbBrandBluesky,
+  TbBrandMedium,
+  TbBrandLinkedin,
+} from "react-icons/tb";
 
 import SocialLink from "./components/SocialLink";
+import ThemeToggle from "./components/ThemeToggle";
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-white dark:bg-gray-900">
+      <ThemeToggle className="absolute top-4 right-4" />
       <main className="flex-grow flex flex-col items-center justify-center p-4 text-center">
         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
           Nicolas Payot
